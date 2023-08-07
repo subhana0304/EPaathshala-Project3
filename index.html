@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@400;700;900&family=Nunito:wght@200;300;400;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .header{
+        background-image: url(./Images/bg-1.png);
+        background-size: cover;
+    }
+    .newsletter{
+        background-image: url(./Images/bg-2.png);
+        background-size: cover;
+    }
+</style>
+<body>
+    <header class="header px-12">
+        <!-- Navbar -->
+        <nav class="md:flex justify-between items-center py-3">
+            <div class="order-2 md:order-1">
+                <ul class="md:flex gap-2">
+                    <li><a class="text-xs" href="#">Home</a></li>
+                    <li><a class="text-xs" href="#">Skin Care</a></li>
+                    <li><a class="text-xs" href="#">Pages</a></li>
+                    <li><a class="text-xs" href="#">Body</a></li>
+                </ul>
+            </div>
+            <div class="md:text-center order-1 md:order-2">
+                <h5 class="md:text-center text-lg">SkinCare Shop</h5>
+            </div>
+            <div class="flex gap-4 order-3 md:order-3">
+                <img class="w-[13px] h-[13px]" src="./Images/icon1.png" alt="">
+                <img class="w-[13px] h-[13px]" src="./Images/icon2.png" alt="">
+                <img class="w-[13px] h-[13px]" src="./Images/icon3.png" alt="">
+                <img class="w-[13px] h-[13px]" src="./Images/icon4.png" alt="">
+            </div>
+        </nav>
+        <!-- Banner -->
+        <div class="banner md:flex items-center justify-between py-8">
+            <div class="md:w-1/2 text-center">
+                <h1 class="font-normal text-3xl md:text-4xl">Sprin Clean <br>Your Beauty Routine</h1>
+                <p class="font-light text-xs py-6">Natural and organic is the future of skincare and life as we know it.</p>
+                <button class="border border-black py-2 px-3 text-[11px] font-bold">Shop The Essential</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="Images/banner.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Introducing -->
+    <div class="m-12 md:flex items-center justify-between gap-10">
+        <div class="md:w-1/2">
+            <img src="Images/introduce.png" alt="">
+        </div>
+        <div class="md:w-1/2 py-10">
+            <h6 class="font-normal text-[#696060] pb-3">INTRODUCING</h6>
+            <h2 class="font-normal text-2xl md:text-3xl">We Believe In Natural Beauty</h2>
+            <p class="font-light text-xs py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="border border-black py-2 px-3 text-[10px] font-bold">Discover More</button>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product m-12 text-center">
+        <h6 class="font-normal text-[#696060] pb-3">Gotta Have it</h6>
+            <h2 class="font-normal text-2xl md:text-3xl">See Our All Products</h2>
+            <p class="font-light text-xs py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="grid md:grid-cols-4 gap-8 my-5">
+                <div class="text-left">
+                    <img src="Images/product-1.png" alt="">
+                    <h6  class="font-normal">Pout Pop Lipstick</h6>
+                    <p class="font-light text-xs">$24.00-$34.00</p>
+                </div>
+                <div class="text-left">
+                    <img src="Images/product-2.png" alt="">
+                    <h6  class="font-normal">Pout Pop Lipstick</h6>
+                    <p class="font-light text-xs">$24.00-$34.00</p>
+                </div>
+                <div class="text-left">
+                    <img src="Images/product-3.png" alt="">
+                    <h6  class="font-normal">Pout Pop Lipstick</h6>
+                    <p class="font-light text-xs">$24.00-$34.00</p>
+                </div>
+                <div class="text-left">
+                    <img src="Images/product4.png" alt="">
+                    <h6  class="font-normal">Pout Pop Lipstick</h6>
+                    <p class="font-light text-xs">$24.00-$34.00</p>
+                </div>
+            </div>
+    </div>
+
+    <!-- Perfect Section -->
+    <div class="perfect my-8 grid md:grid-cols-2 gap-5 items-center">
+        <div class="text-center m-5 md:ml-10 order-2 md:order-1">
+            <h6 class="font-normal text-[#696060] pb-3">PERFECT</h6>
+            <h2 class="font-normal text-2xl md:text-3xl">Prep. Correct. Perfect.</h2>
+            <p class="font-light text-xs py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.</p>
+            <button class="border border-black py-2 px-3 text-[10px] font-bold">Shop The Essential</button>
+        </div>
+        <div class="order-1 md:order-2">
+            <img src="Images/perfect.png" alt="">
+        </div>
+    </div>
+
+    <!-- Photos Section -->
+    <div class="photos bg-[#CFDCD3] p-5">
+        <div class="grid md:grid-cols-4 space-y-3 md:space-y-0">
+            <div><img src="Images/glry1.png" alt=""></div>
+            <div class="md:col-span-2 md:row-span-2 md:p-5 md:pt-0"><img src="Images/glrBig.png" alt=""></div>
+            <div><img src="Images/glry2.png" alt=""></div>
+            <div><img src="Images/glry3.png" alt=""></div>
+            <div><img src="Images/glry4.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter md:p-12 p-6">
+        <div class="text-center">
+            <h6 class="font-normal text-[#696060] pb-2">NEWSLETTER</h6>
+            <h2 class="font-normal text-xl md:text-2xl">Subscribe now & get 10% off</h2>
+            <p class="font-light scroll-py-2">Be the first to know about our new arrivals and exclusive offers.</p>
+            <div class="py-3 flex text-center justify-center">
+                <input class="py-1 px-3 outline-none" type="email" placeholder="Enter Your Email">
+                <button class="py-1 px-3 bg-white -ml-2">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black py-3 px-8">
+        <div class="footer md:flex md:justify-between text-white items-center">
+            <div>
+                <p class="text-[10px]">COPYRIGHT © 2023 | ALL RIGHTS RESERVED.</p>
+            </div>
+            <div>
+                <ul class="md:flex gap-2">
+                    <li><a class="text-[9px] font-light" href="#">PRIVACY POLICY</a></li>
+                    <li><a class="text-[9px] font-light" href="#">TERMS OF USE</a></li>
+                    <li><a class="text-[9px] font-light" href="#">CONTACT FAQ</a></li>
+                    <li><a class="text-[9px] font-light" href="#">STORES</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
